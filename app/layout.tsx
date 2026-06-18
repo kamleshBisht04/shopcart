@@ -14,7 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: {
     template: "%s - Shopcart online store",
-    default: "Shopcart online store",
+    default: "Shopcart | online store",
   },
   description: "Shopcart online store, Your one stop shop for all your needs",
 };
