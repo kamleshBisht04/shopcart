@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 const page = () => {
@@ -19,6 +20,8 @@ const page = () => {
         explicabo repudiandae laborum quam, quod ipsam laudantium obcaecati modi cupiditate est
         itaque nostrum.
       </p>
+
+      <Button>check out</Button>
     </div>
   );
 };
