@@ -5,7 +5,7 @@ import logo from "@/app/assets/logo.png";
 
 const Logo = ({ className }: { className?: string }) => {
   return (
-    <Link href={"/"} className="flex items-center gap-2 ">
+    <Link href={"/"} className="flex items-center  ">
       <Image
         src={logo}
         alt="Shopcart Logo"
