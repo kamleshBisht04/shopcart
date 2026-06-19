@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="bg-white py-5 ">
       <Container>
-        <Logo/>
+        <Logo />
 
         {/* NavButton */}
         {/* NavAdmin */}
