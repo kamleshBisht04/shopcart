@@ -4,8 +4,8 @@ import { FC } from "react";
 import { X } from "lucide-react";
 import { headerData } from "@/constants/data";
 import { usePathname } from "next/navigation";
-import SocialMedia from "./SocialMedia";
 import { useOutSideClick } from "@/hooks";
+import SocialMedia from "./SocialMedia";
 
 interface sidebarProps {
   isOpen: boolean;
