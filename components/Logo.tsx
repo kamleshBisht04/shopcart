@@ -8,13 +8,15 @@ const Logo = ({
   className,
   spanDesign,
   isOpen,
+  onClose,
 }: {
   className?: string;
   spanDesign?: string;
-  isOpen: boolean;
+  isOpen?: boolean;
+  onClose?: () => void;
 }) => {
   return (
-    <Link href={"/"} className="flex items-center gap-2 ">
+    <Link href={"/"} className="flex items-center gap-2 " onClick={onClose}>
       <Image
         src={isOpen ? logoWhite : logo}
         alt="Shopcart Logo"
