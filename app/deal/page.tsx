@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 
-const HotDeals = () => {
-  return <div>HotDeals</div>;
-};
+const page = () => {
+  return (
+    <div>page</div>
+  )
+}
 
-export default HotDeals;
+export default page

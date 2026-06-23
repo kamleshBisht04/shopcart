@@ -1,5 +1,7 @@
-const ShopPage = () => {
-  return <div>ShopPage</div>;
+import React from "react";
+
+const page = () => {
+  return <div>page</div>;
 };
 
-export default ShopPage;
+export default page;
