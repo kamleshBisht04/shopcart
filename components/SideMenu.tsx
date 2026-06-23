@@ -4,7 +4,7 @@ import { FC } from "react";
 import { X } from "lucide-react";
 import { headerData } from "@/constants/data";
 import { usePathname } from "next/navigation";
-import { useOutSideClick } from "@/hooks";
+import { useOutSideClick } from "@/hooks/useOutSideClick";
 import SocialMedia from "./SocialMedia";
 
 interface sidebarProps {
