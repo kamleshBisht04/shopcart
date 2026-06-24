@@ -18,7 +18,7 @@ const HomeBanner = () => {
         </Link>
       </div>
       <div>
-        <Image src={banner_1} alt="banner image" className="hidden md:inline-flex w-120" />
+        <Image src={banner_1} alt="banner image" className=" hidden md:inline-flex w-120" />
       </div>
     </div>
   );
