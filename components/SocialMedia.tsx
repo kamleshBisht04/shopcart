@@ -18,6 +18,7 @@ const SocialMedia = ({ className, iconClassName, tooltipClassName }: Props) => {
             <TooltipTrigger asChild>
               <Link
                 href={item?.href}
+                key={item?.title}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
