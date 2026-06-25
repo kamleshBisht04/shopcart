@@ -72,17 +72,13 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="py-6 border-t border-t-slate-300 text-center text-sm text-gray-600">
-          <p>
-            &copy; {new Date().getFullYear()}{" "}
-            <span className="text-darkColor font-black tracking-wider uppercase hover:text-shop_dark_green hoverEffect group font-sans">
-              Shopcar
-              <span className="text-shop_dark_green group:hover:text-darkColor hoverEffect">t</span>
-            </span>
-            . All rights reserved.
-          </p>
-        </div>
       </Container>
+      <div className="py-2 border-t border-t-slate-300 text-center text-sm  text-gray-600 bg-gray-50">
+        <span className="flex items-center justify-center text-black ">
+          <span >&copy;</span> {new Date().getFullYear()} <Logo className="text-sm" />. All rights
+          reserved.
+        </span>
+      </div>
     </footer>
   );
 };
