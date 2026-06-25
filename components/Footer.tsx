@@ -5,6 +5,8 @@ import Logo from "./Logo";
 import SocialMedia from "./SocialMedia";
 import { SubText, SubTitle } from "./ui/title";
 import { categoriesData, quickLinksData } from "@/constants/data";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
@@ -16,10 +18,10 @@ const Footer = () => {
       </div>
       {/* footer bottom */}
       <Container>
-        <div className="grid grid-cols-2  lg:grid-cols-4 gap-20 py-6 mt-6 ">
-          <div className="flex flex-col gap-5">
+        <div className="grid grid-cols-2  lg:grid-cols-4 gap-20 py-6 mt-6  ">
+          <div className="space-y-2">
             <Logo />
-            <SubText className="mb-2">
+            <SubText>
               Discover curated furniture collections at Shopcart, blending style and comfort to
               elevate your living spaces.
             </SubText>
@@ -48,7 +50,7 @@ const Footer = () => {
             <SubTitle>Categories</SubTitle>
             <ul className="mt-4 space-y-3">
               {categoriesData?.map((item) => (
-                <li key={item?.title} className=" ">
+                <li key={item?.title}>
                   <Link
                     href={item?.href}
                     className=" text-sm text-gray-600 font-medium  hover:text-shop_dark_green "
@@ -59,7 +61,26 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div></div>
+          <div>
+            <SubTitle>Newsletter</SubTitle>
+            <SubText className="my-4 text-sm">
+              Subscribe to our newsletter to receive updates and exclusive offers.
+            </SubText>
+            <form className="space-y-4">
+              <Input placeholder="Enter your email" type="email" required />
+              <Button className="w-full">Subscribe</Button>
+            </form>
+          </div>
+        </div>
+        <div className="py-6 border-t border-t-slate-300 text-center text-sm text-gray-600">
+          <p>
+            &copy; {new Date().getFullYear()}{" "}
+            <span className="text-darkColor font-black tracking-wider uppercase hover:text-shop_dark_green hoverEffect group font-sans">
+              Shopcar
+              <span className="text-shop_dark_green group:hover:text-darkColor hoverEffect">t</span>
+            </span>
+            . All rights reserved.
+          </p>
         </div>
       </Container>
     </footer>
